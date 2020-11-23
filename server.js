@@ -10,7 +10,7 @@ const indexRoutes = require('./routes/index');
 app.use((req, res, next) => {
     const allowedOrigins = [
         'http://localhost:3000',
-        'HEROKU'
+        'http://reactjs-bare-minimum.herokuapp.com'
     ];
     const origin = req.header.origin;
     if (allowedOrigins.includes(origin)) {
